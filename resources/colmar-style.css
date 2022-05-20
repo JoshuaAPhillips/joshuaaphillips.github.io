@@ -427,6 +427,8 @@ h2#exhibit {
 
   .exhibit .video-left video {
     padding-bottom: 1.2rem;
+    max-width: 100%;
+    max-height: auto;
   }
 
   .exhibit .exhibit-right {
