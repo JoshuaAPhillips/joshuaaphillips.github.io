@@ -24,6 +24,12 @@ h1, h2, h3 {
   color: DarkSlateGray;
 }
 
+h2 {
+  font-size: 2.0rem;
+  font-weight: 200;
+  padding: 4.0rem 0 2.0rem 4.0rem;
+}
+
 
 /* image rules */
 
@@ -76,11 +82,11 @@ nav a {
   padding-right: 1.0rem;
   padding-top: 1.0rem;
   text-decoration: none;
-  transition: 1s;
 }
 
 nav a:hover {
   color: FireBrick;
+  text-decoration: underline;
 }
 
 p#logo a {
@@ -120,12 +126,6 @@ p#logo a:hover {
 
 /* projects */
 
-h2#projects {
-  font-size: 2.0rem;
-  font-weight: 200;
-  padding: 4.0rem 0 2.0rem 4.0rem;
-}
-
 .projects figure {
   display: grid;
   max-width: 80%;
@@ -135,13 +135,15 @@ h2#projects {
   grid-auto-flow: row;
   grid-column-gap: 2.0rem;
   grid-template-areas: "title description"
-                      "date description"
+                      "date description";
 }
 
 .projects h3.title {
   grid-area: title;
   font-size: 1.5rem;
   font-weight: 100;
+  align-self: flex-end;
+  padding-bottom: 1.0rem;
 }
 
 .projects p.description {
@@ -151,7 +153,7 @@ h2#projects {
 .projects p.date {
   grid-area: date;
   font-size: 0.8rem;
-  align-self: start;
+  align-self: flex-start;
 }
 
 /* footer */
