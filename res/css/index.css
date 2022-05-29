@@ -15,7 +15,7 @@ body {
   margin-bottom: 0;
 }
 
-p {
+p, i {
   font-size: 1.0rem;
   color: DarkSlateGray
 }
@@ -28,6 +28,15 @@ h2 {
   font-size: 2.0rem;
   font-weight: 200;
   padding: 4.0rem 0 2.0rem 4.0rem;
+}
+
+a {
+  color: DarkSlateGray;
+  transition: 0.75s;
+}
+
+a:hover {
+  color: FireBrick;
 }
 
 
@@ -82,11 +91,19 @@ nav a {
   padding-right: 1.0rem;
   padding-top: 1.0rem;
   text-decoration: none;
+  transition: 0.7s;
+}
+
+nav i {
+  padding-right: 1.0rem;
 }
 
 nav a:hover {
   color: FireBrick;
-  text-decoration: underline;
+}
+
+nav i:hover {
+  color: FireBrick;
 }
 
 p#logo a {
@@ -154,6 +171,75 @@ p#logo a:hover {
   grid-area: date;
   font-size: 0.8rem;
   align-self: flex-start;
+}
+
+/* publications */
+
+.publications figure {
+  display: grid;
+  max-width: 80%;
+  margin-left: 4.0rem;
+  margin-bottom: 2.0rem;
+  grid-template-columns: 1fr 2fr;
+  grid-auto-flow: row;
+  grid-column-gap: 2.0rem;
+  grid-template-areas: "date title"
+                      ". description"
+                      ". link";
+}
+
+.publications p.date {
+  grid-area: date;
+  align-self: center;
+}
+
+.publications h3.title {
+  grid-area: title;
+  font-size: 1.5rem;
+  font-weight: 100;
+  margin-bottom: 0.5rem;
+}
+
+.publications p.description {
+  grid-area: description;
+  margin-bottom: 0.5rem;
+}
+
+.publications a.link {
+  grid-area: link;
+  color: DarkSlateGray;
+}
+
+.publications a.link:hover {
+  color: FireBrick;
+}
+
+.publications h3.title i {
+  font-size: 1.5rem;
+}
+
+/* cv */
+
+iframe {
+  width: 80%;
+  height: 800px;
+  margin-left: 4.0rem;
+  border: 1px solid DarkSlateGray
+}
+
+/* contact */
+
+.contact {
+  margin-bottom: 2.0rem;
+}
+
+.contact figure {
+  margin-left: 4.0rem;
+  padding-bottom: 1.0rem;
+}
+
+.contact i {
+  margin-right: 2.0rem;
 }
 
 /* footer */
