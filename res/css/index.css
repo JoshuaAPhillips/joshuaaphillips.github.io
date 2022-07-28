@@ -242,6 +242,7 @@ iframe {
 
 .contact i {
   margin-right: 2.0rem;
+  max-width: 1.0rem;
 }
 
 /* footer */
