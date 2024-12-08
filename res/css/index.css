@@ -131,16 +131,16 @@ p#logo a:hover {
 .header h1 {
   color: DarkSlateGray;
   font-family: Baskerville;
-  font-size: 2.5rem;
+  font-size: 1.5rem;
   font-weight: 200;
-  max-width: 60%;
+  max-width: 100%;
   padding-top: 7.0rem;
   padding-left: 4.0rem;
+  padding-right: 4.0rem;
 }
 
-.header h1 em {
-  color: DarkSlateGray;
-  font-size: 2.5rem;
+.header em {
+  font-size: inherit;
 }
 
 /* projects */
